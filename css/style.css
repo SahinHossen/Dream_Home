@@ -1,23 +1,26 @@
 * {
 	margin: 0;
 	padding: 0;
+}
+body {
+	background: linear-gradient(#6673A7, #fff, #fff);
+	color: #808080;
+	font-size: 16px;
 	font-family: sans-serif;
+	line-height: 1.5;
 }
-header {
-	background-image: url(../images/banner.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-	padding-top: 15px;
+.container {
+	margin: 15px 25px 5px 25px;
+	border: 2px solid #385577;
 }
-.wrapper {
-	width: 90%;
-	background-color: white;
-	margin: 0 auto;
+/* Header Start */
+header {}
+.menu-wrapper {
+	background-color: #fff;
 	overflow: hidden;
 }
 .logo {
-	width: 25%;
+	width: 20%;
 	float: left;
 }
 .logo img{
@@ -28,83 +31,80 @@ header {
 	float: right;
 }
 .menu ul {
+	list-style: none;
 	float: right;
 }
 .menu ul li {
-	list-style: none;
 	float: left;
 }
 .menu ul li a {
 	text-decoration: none;
-	color: #6C7383;
-	padding: 40px 20px;
+	color: #808080;
+	padding: 8px 15px;
+	margin-top: 15px;
 	display: block;
 	transition: .5s;
-	font-size: 20px;
 }
 .menu ul li a:hover {
-	color: black;
+	color: #000000;
+	background: rgba(0, 0, 0, .2);
+	border-radius: 5px;
 }
+/* Header End */
+
 /* Banner Start */
 .banner {
 	background-image: url(../images/banner.jpg);
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: top center;
 }
 .banner-wrapper {
-width: 90%;
-margin: 0 auto;
-padding-top: 150px;
-padding-bottom: 300px;
+	padding-top: 100px;
+	padding-bottom: 200px;
+	opacity: .5;
 }
 .banner-content {
+	color: #fff;
 	width: 20%;
-	background-color: black;
-	opacity: 0.5;
+	background: rgba(0, 0, 0, .8);
 	padding: 25px 20px;
 }
 .banner-content h1 {
-	color: white;
 	font-size: 30px;
 	font-weight: normal;
-	line-height: 1.5;
 }
-.banner-content p {
-	color: white;
-	line-height: 1.5;
-	font-size: 20px;
-}
+.banner-content p {}
 .banner-content button {
 	border: none;
-	padding: 5px 15px;
-	background: #1a1a1a;
-	color: white;
+	color: #fff;
+	background: #000000;
 	margin-top: 20px;
-	font-size: 16px;
+	padding: 5px 15px;
 	border-radius: 5px;
+	cursor: pointer;
 }
 .banner-content button:hover {
-	color: black;
-	background-color: white;
+	color: #000000;
+	background-color: #fff;
 }
 /* Banner End */
+
 /* Service Start */
-.service {
-	background-color: white;
-}
+.service {}
 .service-wrapper {
 	width: 80%;
 	margin: 0 auto;
-	padding-top: 80px;
-	padding-bottom: 100px;
+	padding: 60px 0;
 	overflow: hidden;
 }
 .single-service {
 	width: 30%;
 	margin: 0 auto;
-	padding: 10px 20px;
 	float: left;
+	text-align: center;
+	padding: 10px 20px;
 }
 .single-service:first-child {
 	padding-left: 0px;
@@ -113,9 +113,8 @@ padding-bottom: 300px;
 	padding-right: 0px;
 }
 .service-title h1 {
-	color: gray;
 	font-size: 35px;
-	text-align: center;
+	font-weight: normal;
 }
 .service-logo {
 	width: 100%;
@@ -125,35 +124,51 @@ padding-bottom: 300px;
 	width: 100%;
 	height: 160px;
 }
-.service-content p {
-	color: gray;
-	line-height: 1.3;
-}
+.service-content p {}
 .service-content button {
 	border: none;
-	padding: 5px 15px;
+	color: #fff;
 	background-color: #385577;
-	color: white;
+	padding: 5px 15px;
 	margin: 30px 35%;
-	font-size: 16px;
 	border-radius: 5px;
+	cursor: pointer;
+	transition: .5s;
+}
+.service-content button:hover {
+	background-color: #F59D18;
 }
 /* Service End */
+
 /* Footer Start */
 .footer {
-	background-color: white;
-}
-.footer-wrapper {
-	width: 30%;
-	margin: 0 auto;
-}
-.footer-content {
-	color: gray;
-	line-height: 1.5;
+	padding-bottom: 60px;
 	text-align: center;
 }
-.footer-logo img {
-	width: 40%;
-	padding: 5px 30%;
+.footer-wrapper {}
+.footer-content {}
+.footer-logo i {
+	font-size: 60px;
+	margin: 20px 5px;
+	cursor: pointer;
+}
+.footer-logo a:nth-child(1) i {
+	color: #5A7EC7;
+	background: #fff;
+}
+.footer-logo a:nth-child(2) i {
+	color: #228AE7;
+	background: #fff;
+}
+.footer-logo a:nth-child(3) i {
+	color: #DC5043;
+	background: #fff;
+}
+.footer-logo a:nth-child(4) i {
+	color: #F59D18;
+	background: #fff;
+}
+.footer-logo i:hover {
+	font-size: 65px;
 }
 /* Footer End */
